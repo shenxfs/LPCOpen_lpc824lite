@@ -98,7 +98,7 @@ static void Init_UART_PinMux(void)
 
 	Chip_Clock_SetUARTClockDiv(1);	/* divided by 1 */
 
-#if defined(BOARD_NXP_LPCXPRESSO_824)
+#if defined(BOARD_NXP_LPCXPRESSO_824)||defined(BOARD_LPC824LITE)
 	/* Disable the fixed pins assigned to 0 and 18 */
 	Chip_SWM_DisableFixedPin(SWM_FIXED_ACMP_I1);
 	Chip_SWM_DisableFixedPin(SWM_FIXED_ADC8);
